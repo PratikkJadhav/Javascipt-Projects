@@ -1,5 +1,5 @@
 function getRandomRGB() {
-  const r = Math.floor(Math.random() * 256); // 0–255
+  const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
   return `rgb(${r}, ${g}, ${b})`;
@@ -10,7 +10,7 @@ const body = document.querySelector("body")
 let startbutton = document.getElementById("start").addEventListener("click" , function(event){
     if(!intervalID){
         intervalID = setInterval(()=>{
-            body.style.backgroundColor = getRandomRGB(),1
+            body.style.backgroundColor = getRandomRGB()
         },100);
     }
 })
